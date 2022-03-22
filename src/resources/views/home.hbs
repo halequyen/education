@@ -1,0 +1,61 @@
+<style>
+    body {
+        background-color: #FFE5E7;
+    }
+</style>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">
+                    Tên 
+                </th>
+                <th scope="col">
+                    Số tiền 
+                </th>
+                <th scope="col">
+                    Tính toán 
+                </th>
+                <th scope="col">
+                    Tổng 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Dung</td>
+                <td><input class="form-control" id="n1" type="text"></td>
+                <td>
+                    Operator
+                    <select id="operator">
+                        <option>+</option>
+                        <option>-</option>
+                    </select>
+                    <button onclick="myFunction()">Submit</button>
+                </td>
+                <td><input type="text" id="result">(K)</td>
+            </tr>
+            <tr>
+                <td><b>Tổng</b></td>
+                <td><b>a</b></td>
+                <td><b></b></td>
+                <td><b>(K)</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+<script type="text/javascript">
+    function myFunction(){
+        var n1 = document.getElementById('n1').value;
+        var n2 = 0;
+        var operator = document.getElementById('operator').value;
+        var result = 0;
+        if(operator=="+"){
+            result = parseInt(n1) + parseInt(n2);
+        } else if(operator=="-"){
+            result = parseInt(n2) - parseInt(n1);
+        }
+        document.getElementById('result').value = result;
+    }
+</script>
