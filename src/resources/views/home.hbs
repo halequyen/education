@@ -3,7 +3,7 @@
         background-color: #FFE5E7;
     }
 </style>
-
+<form method="POST" action="/">
     <table class="table mt-4">
         <thead>
             <tr>
@@ -34,7 +34,7 @@
                     </select>
                     <button onclick="myFunction()">Submit</button>
                 </td>
-                <td><input type="text" id="result">(K)</td>
+                <td>{{result}}(K)</td>
             </tr>
             <tr>
                 <td><b>Tổng</b></td>
@@ -44,6 +44,7 @@
             </tr>
         </tbody>
     </table>
+</form>
 
 <script type="text/javascript">
     function myFunction(){

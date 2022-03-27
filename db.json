@@ -1,0 +1,22 @@
+{
+  "result": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "result": "1"
+    },
+    {
+      "result": "1"
+    },
+    {
+      "result": "2"
+    },
+    {}
+  ],
+  "n1": [],
+  "n2": []
+}
